@@ -1,8 +1,24 @@
 aid: leapstack
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/leapstack.png
 name: LeapStack
-description: 'LeapStack is a company surfaced as a portfolio company of dcm-ventures, qiming and added
-  to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'LeapStack (栈略数据 / Stack Strategy Data) is a Shanghai-based insurance technology and
+  data-analytics company operating in China''s health-insurance sector, applying big-data and risk-control
+  intelligence to help insurers with claims, underwriting, and healthcare-cost analysis. It is a portfolio
+  company of DCM Ventures and Qiming Venture Partners. Its public web presence (www.leapstack.tech) is a
+  client-rendered marketing site; as of this enrichment pass no public developer portal, API documentation,
+  OpenAPI specification, SDK, or other public API surface was found. This profile is maintained in the API
+  Evangelist network as a company record.'
 url: https://raw.githubusercontent.com/api-evangelist/leapstack/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,16 +29,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- InsurTech
+- Insurance
+- Health Insurance
+- Data Analytics
+- Risk Management
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/leapstack-domain-security.yml
 - type: Website
   url: https://www.leapstack.tech/
